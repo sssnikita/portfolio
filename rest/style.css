@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main, header {
+    margin: 50px 100px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+#cart-button {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cart-button:hover {
+    background: rgba(0, 25, 200, 0.3);
+}
+#products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.product {
+    background: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-photo {
+    max-width: 100px;
+    border-radius: 5px;
+    margin: 5px 0;
+
+}
+.product a {
+    text-decoration: none;
+    margin: 3px 0;
+}
+.product button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background: greenyellow;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 70vh;
+}
+#profile {
+    background: lightskyblue;
+    padding: 20px;
+    flex-basis: 20rem;
+    text-align: center;
+    border-radius: 15px;
+}
+.product_img {
+    border-radius: 50%;
+    width: 200px;
+    margin: 30px 0;
+
+}
+
+#cart {
+    position: relative;
+}
+#cart-product::before {
+     content: '';
+    border: transparent solid 16px;
+    border-bottom: solid #000 16px;
+    position: relative;
+    top: -2.7rem;
+    left: 15.8rem;
+    z-index: -1;
+}
+#cart-product {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: lightgoldenrodyellow;
+    top: 59px;
+    right: 0;
+    left: -16rem;
+    position: absolute;
+    padding: 10px;
+    text-align: left;
+}
+.hide{
+    display: none;
+}
+#cart-product img{
+    max-width: 60px;
+    max-height: 70px;
+}
+
+.byby{
+    background: grey;
+    border: none;
+    border-radius: 10%;
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,152 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+main, header {
+    margin: 50px 100px;
+} */
+ /* #cart{
+    position: fixed;
+    top: 0; right: 0;
+ } */
+ header {
+    display: flex;
+    justify-content: space-between;
+ }
+ #cart {
+    position: relative;
+    position: fixed;
+    top: 0; right: 0;
+}
+#cart-product::before {
+     content: '';
+    border: transparent solid 16px;
+    border-bottom: solid #000 16px;
+    position: relative;
+    top: -2.7rem;
+    left: 15.8rem;
+    z-index: -1;
+}
+#cart-product {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: lightgoldenrodyellow;
+    top: 59px;
+    right: 0;
+    left: -16rem;
+    position: absolute;
+    padding: 10px;
+    text-align: left;
+}
+.flower{
+    position: fixed;
+    top: 0; left: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+#cart-button {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cart-button:hover {
+    background: rgba(0, 25, 200, 0.3);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.add_product {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+#add_product_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.hide{
+    display: none;
+}
+.byby{
+    background: grey;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
